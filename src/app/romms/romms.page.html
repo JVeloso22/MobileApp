@@ -1,9 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>romms</ion-title>
-  </ion-toolbar>
+<ion-header collapse="fade" class="header-color" [translucent]="true">
+  <ion-grid class="ion-text-center header-layout">
+    <ion-row>
+      <ion-col class="title-layout text-star" push-sm="6">
+        <h2>Romms</h2></ion-col>
+      <ion-col pull-sm="6">
+        <ion-avatar class="avatar-layout">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="header-rooms-layout">
+    <ion-row class="rooms-layout">
+      <ion-col size="4"><ion-button routerLink="/devices"><h5>DEVICES</h5></ion-button></ion-col>
+      <ion-col size="4"><ion-button class="button-color"><h5>ROMMS</h5></ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="moon-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/tabs/tab1">
+        <ion-icon name="home-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>
+

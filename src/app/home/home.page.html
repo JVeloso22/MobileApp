@@ -13,8 +13,8 @@
 
   <ion-grid class="header-rooms-layout">
     <ion-row class="rooms-layout">
-      <ion-col size="4"><ion-button tab="tab5"><h5>DEVICES</h5></ion-button></ion-col>
-      <ion-col size="4"><ion-button><h5>ROMMS</h5></ion-button></ion-col>
+      <ion-col size="4"><ion-button routerLink="/devices"><h5>DEVICES</h5></ion-button></ion-col>
+      <ion-col size="4"><ion-button routerLink="/romms"><h5>ROMMS</h5></ion-button></ion-col>
     </ion-row>
   </ion-grid>
 </ion-header>
@@ -29,6 +29,9 @@
       <ion-fab-button>
         <ion-icon name="moon-outline"></ion-icon>
         <ion-icon name="sunny-outline" hidden></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/tabs/tab1">
+        <ion-icon name="home-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
