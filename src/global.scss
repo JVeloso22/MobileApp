@@ -32,3 +32,12 @@
 .tabs-zindex {
   --z-index: 9999;
 }
+
+.slides-ios {
+  --bullet-background: var(--ion-color-step-200, black);
+  --bullet-background-active: var(--ion-color-primary, white);
+  --progress-bar-background: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.25);
+  --progress-bar-background-active: var(--ion-color-primary-shade, white);
+  --scroll-bar-background: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.1);
+  --scroll-bar-background-active: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.5);
+}
