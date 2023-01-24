@@ -9,8 +9,18 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 <ion-content class="ion-padding">
-  <ion-item>
-    <ion-label position="stacked">Your name</ion-label>
-  </ion-item>
+  <ion-row class="ion-text-center">
+    <ion-col>
+      <ion-button (click)="clickLogin()" class="ion-button-color" fill="outline">Login</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button (click)="clickRegister()" class="ion-button-color" fill="outline">Register</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-content class="ion-padding">
+      <app-login [hidden]="!login"></app-login>
+      <app-register [hidden]="!register"></app-register>
+  </ion-content>
 </ion-content>
