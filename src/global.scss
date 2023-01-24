@@ -42,10 +42,6 @@
   --scroll-bar-background-active: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.5);
 }
 
-.header-layout {
-  height: 95px;
-}
-
 .title-layout {
   height: 50px;
   margin-top: 5px;
@@ -83,11 +79,11 @@ ion-button:active {
 
 h5 {
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
-  font-family: sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 22px;
 }
 
@@ -97,4 +93,16 @@ h2 {
 
 .segment-color {
   color: white;
+}
+
+ion-img {
+  border-radius: var(--border-radius);
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
