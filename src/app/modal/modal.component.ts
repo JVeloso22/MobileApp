@@ -30,9 +30,12 @@ export class ModalComponent {
 
   clickLogin() {
     this.login = true
+    this.register = false
   }
 
   clickRegister() {
     this.register = true
+    this.login = false
+
   }
 }
