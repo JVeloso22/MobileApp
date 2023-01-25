@@ -1,37 +1,22 @@
 <ion-header collapse="fade" class="header-color" [translucent]="true">
-  <ion-grid class="ion-text-center header-layout">
-    <ion-row>
-      <ion-col class="title-layout text-star" push-sm="6">
-        <h2>Home</h2></ion-col>
-      <ion-col pull-sm="6">
-        <ion-avatar class="avatar-layout">
-          <img alt="Silhouette of a person's head" src="https://www.svgrepo.com/show/61986/avatar.svg" />
+  <ion-grid class="ion-padding">
+    <ion-row class="ion-justify-content-between ion-row-layout">
+      <ion-col size="4">
+        <ion-title class="">
+          Home
+        </ion-title>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center ion-col-image">
+        <ion-avatar class="test">
+          <img src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
         </ion-avatar>
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <ion-grid class="header-rooms-layout">
-    <ion-row>
-      <ion-col size="2"></ion-col>
-      <ion-col size="8" class="ion-text-center">
-        <ion-col>
-          <ion-button fill="clear" class="header-room-devices-text" routerLink="/devices">Devices</ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button fill="clear" class="header-room-devices-text" routerLink="/romms">Romms</ion-button>
-        </ion-col>
-      </ion-col>
-      <ion-col size="2"></ion-col>
-    </ion-row>
-  </ion-grid>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-
-  <div class="ion-text-center ion-padding margin-text">
-    <h3>Make Your Home Mobile</h3>
-  </div>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h4 class="header-room-devices-text">My Devices</h4>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
@@ -43,6 +28,12 @@
       </ion-fab-button>
       <ion-fab-button>
         <ion-icon name="person-outline" class="icons-color" (click)="openModal()"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/romms">
+        <ion-icon name="layers-outline" class="icons-color"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button routerLink="/devices">
+        <ion-icon name="desktop-outline" class="icons-color"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
   </ion-fab>
