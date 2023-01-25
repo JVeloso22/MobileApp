@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RoutinesPage } from './routines.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
 import { RoutinesPageRoutingModule } from './routines-routing.module';
 
@@ -12,7 +11,6 @@ import { RoutinesPageRoutingModule } from './routines-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    ExploreContainerComponentModule,
     RoutinesPageRoutingModule
   ],
   declarations: [RoutinesPage]
