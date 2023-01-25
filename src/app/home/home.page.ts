@@ -9,6 +9,9 @@ import { ModalComponent } from '../modal/modal.component';
 })
 export class HomePage {
 message = "teste";
+onToogle!: boolean;
+checkOn!: string;
+checked: boolean = false;
 
   constructor(private modalCtrl: ModalController) {}
 
@@ -25,6 +28,16 @@ message = "teste";
 
     if (role === "confirm") {
       this.message = "Hello, ${data}!";
+    }
+  }
+
+  clickToogle(){
+    if(this.onToogle = false) {
+      this.checkOn = "Desligado"
+    } else {
+      this.onToogle = true
+      this.checkOn = "Ligado"
+      this.checked = true
     }
   }
 

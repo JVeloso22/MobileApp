@@ -16,7 +16,48 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
+
   <h4 class="header-room-devices-text">My Devices</h4>
+
+  <ion-row class="ion-text-center">
+    <ion-col>
+      <ion-card color="dark" class="card-box-shadow ion-card-size">
+        <ion-card-header>
+          <ion-row>
+            <ion-col>
+              <ion-icon name="beer-outline" class="icon-size icon-color"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-toggle color="medium" [checked]="false"></ion-toggle>
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-title><h5><b>Kitchen Lights</b></h5></ion-card-title>
+        <ion-card-content>
+          <h6 class="ion-text-align"><b>Desligado</b></h6>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card color="dark" class="card-box-shadow ion-card-size">
+        <ion-card-header>
+          <ion-row>
+            <ion-col>
+              <ion-icon name="bed-outline" class="icon-size icon-color"></ion-icon>
+            </ion-col>
+            <ion-col>
+              <ion-toggle color="medium" [checked]="false"></ion-toggle>
+            </ion-col>
+          </ion-row>
+        </ion-card-header>
+        <ion-card-title><h5><b>Bedroom Lights</b></h5></ion-card-title>
+        <ion-card-content>
+          <h6 class="ion-text-align"><b>Desligado</b></h6>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
