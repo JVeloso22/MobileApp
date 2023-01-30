@@ -21,7 +21,15 @@ const routes: Routes = [
   {
     path: 'romms',
     loadChildren: () => import('./romms/romms.module').then( m => m.RommsPageModule)
+  },  {
+    path: 'kitchen',
+    loadChildren: () => import('./kitchen/kitchen.module').then( m => m.KitchenPageModule)
   },
+  {
+    path: 'bedroom',
+    loadChildren: () => import('./bedroom/bedroom.module').then( m => m.BedroomPageModule)
+  },
+
 
 
 ];
