@@ -21,9 +21,6 @@ const routes: Routes = [
   {
     path: 'romms',
     loadChildren: () => import('./romms/romms.module').then( m => m.RommsPageModule)
-  },  {
-    path: 'lights',
-    loadChildren: () => import('./lights/lights.module').then( m => m.LightsPageModule)
   },
 
 
