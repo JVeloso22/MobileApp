@@ -1,5 +1,7 @@
 .header-room-devices-text {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  text-align: center;
 }
 
 .icon-size {
@@ -24,15 +26,6 @@ ion-col {
   margin-right: -45px;
 }
 
-.ion-row-layout {
-  height: 60px;
-}
-
-.ion-card-size {
-  height: 175px;
-  width: 152px;
-}
-
 .icon-color {
   color: black
 }
@@ -44,4 +37,17 @@ ion-col {
 a {
   color: black;
   text-decoration: none;
+}
+
+.ion-grid-layout {
+  height: 170px;
+}
+
+ion-card {
+  display: fixed;
+}
+
+.ion-button-layout {
+  border-radius: 50%;
+  background-color: red;
 }
