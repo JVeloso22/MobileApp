@@ -1,9 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>kitchen</ion-title>
-  </ion-toolbar>
+<ion-header collapse="fade" class="header-color" [translucent]="true">
+  <ion-grid class="ion-padding">
+    <ion-row class="ion-justify-content-center ion-row-layout">
+      <ion-col class="ion-col-title-icon">
+        <a href="/tabs/tab1"><ion-icon name="arrow-back-outline" class="icon-size"></ion-icon></a>
+      </ion-col>
+      <ion-col size="8" class="ion-col-title">
+        <ion-title class="ion-title-size">
+          Kitchen
+        </ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" class="ion-text-center ion-padding">
 
 </ion-content>
+
+
