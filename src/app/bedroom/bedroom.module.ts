@@ -7,6 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { BedroomPageRoutingModule } from './bedroom-routing.module';
 
 import { BedroomPage } from './bedroom.page';
+import { BlindsComponent } from './devices/blinds/blinds.component';
+import { FansComponent } from './devices/fans/fans.component';
+import { LightsComponent } from './devices/lights/lights.component';
+import { TempComponent } from './devices/temp/temp.component';
 
 @NgModule({
   imports: [
@@ -15,6 +19,6 @@ import { BedroomPage } from './bedroom.page';
     IonicModule,
     BedroomPageRoutingModule
   ],
-  declarations: [BedroomPage]
+  declarations: [BedroomPage, BlindsComponent, FansComponent, LightsComponent, TempComponent]
 })
 export class BedroomPageModule {}

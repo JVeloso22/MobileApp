@@ -1,4 +1,4 @@
-<ion-header collapse="fade" class="header-color" [translucent]="true">
+<ion-header collapse="fade" class="header-size header-color" [translucent]="true">
   <ion-grid class="ion-padding">
     <ion-row class="ion-justify-content-center ion-row-layout">
       <ion-col class="ion-col-title-icon">
@@ -14,22 +14,24 @@
   <ion-grid class="ion-grid-layout">
     <ion-row>
       <ion-col>
-        <ion-icon name="flashlight-outline" class="icon-size"></ion-icon>
+        <ion-button fill="clear" routerLink="lights"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
       </ion-col>
       <ion-col>
-        <ion-icon name="thermometer-outline" class="icon-size"></ion-icon>
+        <ion-button fill="clear" routerLink="temp"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
       </ion-col>
       <ion-col>
-        <ion-icon name="nuclear-outline" class="icon-size"></ion-icon>
+        <ion-button fill="clear" routerLink="fans"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
       </ion-col>
       <ion-col>
-        <ion-icon name="sunny-outline" class="icon-size"></ion-icon>
+        <ion-button fill="clear" routerLink="blinds"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-text-center ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <router-outlet></router-outlet>
 
 </ion-content>
 
