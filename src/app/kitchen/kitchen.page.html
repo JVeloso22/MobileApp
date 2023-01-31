@@ -14,22 +14,24 @@
     <ion-grid class="ion-grid-layout">
       <ion-row>
         <ion-col>
-          <ion-button fill="clear"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" routerLink="lights"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" routerLink="temp"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" routerLink="fans"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" routerLink="blinds"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
 </ion-header>
 
 <ion-content>
+
+  <router-outlet></router-outlet>
 
 </ion-content>
 
