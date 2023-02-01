@@ -14,24 +14,27 @@
     <ion-grid class="ion-grid-layout">
       <ion-row>
         <ion-col>
-          <ion-button fill="clear" routerLink="lights"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="clickLights()"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" routerLink="temp"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="clickTemp()"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" routerLink="fans"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="clickFans()"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" routerLink="blinds"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="clickBlinds()"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding" [fullscreen]="true">
 
-  <router-outlet></router-outlet>
+  <app-lights [hidden]="!lights"></app-lights>
+  <app-temp [hidden]="!temp"></app-temp>
+  <app-fans [hidden]="!fans"></app-fans>
+  <app-blinds [hidden]="!blinds"></app-blinds>
 
 </ion-content>
 
