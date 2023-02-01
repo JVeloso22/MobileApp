@@ -14,16 +14,16 @@
     <ion-grid class="ion-grid-layout">
       <ion-row>
         <ion-col>
-          <ion-button fill="clear" (click)="clickLights()"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="activePage='lights'"><ion-icon name="flashlight-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" (click)="clickTemp()"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="activePage='temp'"><ion-icon name="thermometer-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" (click)="clickFans()"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="activePage='fans'"><ion-icon name="nuclear-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
         <ion-col>
-          <ion-button fill="clear" (click)="clickBlinds()"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
+          <ion-button fill="clear" (click)="activePage='blinds'"><ion-icon name="sunny-outline" class="icon-size"></ion-icon></ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -31,10 +31,10 @@
 
 <ion-content class="ion-padding" [fullscreen]="true">
 
-  <app-lights [hidden]="!lights"></app-lights>
-  <app-temp [hidden]="!temp"></app-temp>
-  <app-fans [hidden]="!fans"></app-fans>
-  <app-blinds [hidden]="!blinds"></app-blinds>
+  <app-lights *ngIf="activePage === 'lights'"></app-lights>
+  <app-temp *ngIf="activePage === 'temp'"></app-temp>
+  <app-fans *ngIf="activePage === 'fans'"></app-fans>
+  <app-blinds *ngIf="activePage === 'blinds'"></app-blinds>
 
 </ion-content>
 
