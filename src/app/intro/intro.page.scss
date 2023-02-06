@@ -1,5 +1,7 @@
 ion-slides {
     height: 100%;
+    --bullet-background: black;
+    --bullet-background-active: red;
   }
   .swiper-slide {
     display: block;

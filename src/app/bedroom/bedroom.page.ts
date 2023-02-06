@@ -12,4 +12,6 @@ export class BedroomPage implements OnInit {
   ngOnInit() {
   }
 
+  activePage = 'lights'
+
 }
