@@ -1,5 +1,21 @@
 <ion-content [fullscreen]="true">
 
-  <p>Temperatura - Cozinha</p>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title><b>Air Conditioning</b></ion-title>
+      <ion-title class="ion-subtitle-margin" size="small"><b>Kitchen</b></ion-title>
+      <ion-buttons [collapse]="true" slot="end">
+        <ion-toggle [enableOnOffLabels]="true" (click)="presentToast('bottom')" (click)="clickAir()" checked="false"></ion-toggle>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true" [hidden]="!cheked">
+
+    <ion-range [pin]="true" [pinFormatter]="pinFormatter">
+      <ion-icon name="moon-outline" slot="start"></ion-icon>
+      <ion-icon name="sunny-outline" slot="end"></ion-icon>
+    </ion-range>
+  </ion-content>
 
 </ion-content>
