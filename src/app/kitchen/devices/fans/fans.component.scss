@@ -1,0 +1,17 @@
+ion-content{
+    overflow-x: hidden;
+  }
+  
+  .ion-subtitle-margin {
+    margin-top: 7px;
+    margin-left: 7px;
+  }
+  
+  ion-range {
+    --bar-background: #BCB9B2;
+    --bar-background-active: #BCB9B2;
+    --knob-background: red;
+    --knob-size: 30px;
+    --pin-background: red;
+    --pin-color: #fff;
+  }
