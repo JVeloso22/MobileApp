@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
-import { RangeCustomEvent } from '@ionic/angular';
 
 @Component({
   selector: 'app-lights',
@@ -13,21 +12,33 @@ export class LightsComponent implements OnInit {
 
   ngOnInit() {}
 
+  activeMessage = "Lights ON"
+  cheked: boolean = false
+
   pinFormatter(value: number) {
     return `${value}%`;
   }
 
   async presentToast(position: 'bottom') {
+
     const toast = await this.toastController.create({
-      message: 'Lights ON',
+      message: this.activeMessage,
       duration: 1500,
       position: position,
     });
 
     await toast.present();
-
   }
 
+  clickLights() {
+    if (this.activeMessage === "Lights ON") {
+      this.activeMessage = "Lights OFF"
+      this.cheked = true
+    } else {
+      this.activeMessage = "Lights ON"
+      this.cheked = false
+    }
+  }
 
 
 }

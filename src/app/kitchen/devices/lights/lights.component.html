@@ -5,12 +5,12 @@
       <ion-title><b>Main Lights</b></ion-title>
       <ion-title class="ion-subtitle-margin" size="small"><b>Kitchen</b></ion-title>
       <ion-buttons [collapse]="true" slot="end">
-        <ion-toggle [enableOnOffLabels]="true" (click)="presentToast('bottom')" checked="false"></ion-toggle>
+        <ion-toggle [enableOnOffLabels]="true" (click)="presentToast('bottom')" (click)="clickLights()" checked="false"></ion-toggle>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true" [hidden]="!cheked">
 
     <ion-range [pin]="true" [pinFormatter]="pinFormatter">
       <ion-icon name="moon-outline" slot="start"></ion-icon>
