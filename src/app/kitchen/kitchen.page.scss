@@ -58,6 +58,11 @@ a {
 .header-size {
   height: 150px;
 }
+
 .header-color {
     background-color: #092A3C;
+}
+
+ion-button:checked {
+  background-color: white;
 }

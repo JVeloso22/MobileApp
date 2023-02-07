@@ -4,15 +4,26 @@
     <ion-toolbar>
       <ion-title><b>Air Conditioning</b></ion-title>
       <ion-title class="ion-subtitle-margin" size="small"><b>Kitchen</b></ion-title>
-      <ion-buttons [collapse]="true" slot="end">
-        <ion-toggle [enableOnOffLabels]="true" (click)="presentToast('bottom')" (click)="clickAir()" checked="false"></ion-toggle>
+      <ion-buttons slot="end">
+        <ion-toggle (click)="presentToast('bottom')" (click)="clickAir()" checked="false"></ion-toggle>
       </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <ion-content [fullscreen]="true" [hidden]="!cheked">
 
-    <ion-range [pin]="true" [pinFormatter]="pinFormatter">
+    <br>
+
+    <ion-segment value="default">
+      <ion-segment-button value="default">
+        <ion-label>Cold</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment">
+        <ion-label>Heat</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-range [pin]="true" [min]="17" [max]="30">
       <ion-icon name="snow-outline" slot="start"></ion-icon>
       <ion-icon name="sunny-outline" slot="end"></ion-icon>
     </ion-range>
